@@ -19,7 +19,7 @@ function NavigationBar(){
 		<nav className="navbar navbar-expand-lg bg-body-tertiary">
   <div className="container-fluid">
     <NavLink className="navbar-brand" to="/addemployee">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-0pOtPr2pJaVh8IQydnFsLga5rXrwvkceEljQyflf8w&s"></img>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-0pOtPr2pJaVh8IQydnFsLga5rXrwvkceEljQyflf8w&s" alt="this is an image"></img>
     </NavLink>
     
     
