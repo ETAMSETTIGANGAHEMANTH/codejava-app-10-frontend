@@ -27,7 +27,7 @@ function RemovedEmployees(){
 				setErr(err.message);
 			}
 		})
-	})
+	},[]);
 	
 	return(
 		<div className='container'>
