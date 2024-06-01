@@ -42,26 +42,26 @@ function AddEmployees(){
 		<form onSubmit={handleSubmit(empobj)}>
 		<div className="mb-3">
 		<input type="text" className="form-control" placeholder = "Name" {...register("ename",{required : true,minLength:"4"})}></input>
-		{errors.ename?.type == "required" && <p className="text-danger">* Name is mandotary.</p>}
-		{errors.ename?.type == "minLength" && <p className="text-danger">*Minimum length is 4.</p>}
+		{errors.ename?.type === "required" && <p className="text-danger">* Name is mandotary.</p>}
+		{errors.ename?.type === "minLength" && <p className="text-danger">*Minimum length is 4.</p>}
 		</div>
 		<div className="mb-3">
 		<input type="text" className="form-control" placeholder="Surname"{...register("esurname",{required:true,minLength:"4"})}></input>
-		{errors.esurname?.type == "required" && <p className="text-danger">*Surname is mandatory.</p>}
-		{errors.esurname?.type == "minLength" && <p className="text-danger">*Minimum length is 4.</p>}
+		{errors.esurname?.type === "required" && <p className="text-danger">*Surname is mandatory.</p>}
+		{errors.esurname?.type === "minLength" && <p className="text-danger">*Minimum length is 4.</p>}
 		</div>
 		<div className="mb-3">
 		<input type="text" className="form-control" placeholder="Email" {...register("eemail",{required:true,validate:"/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}$/i"})}></input>
-		{errors.email?.type == "required" && <p className="text-danger">*Email is Mandotary.</p>}
-		{errors.email?.type == "validate" && <p className="text-danger">*This is not valid Email.</p>}
+		{errors.email?.type === "required" && <p className="text-danger">*Email is Mandotary.</p>}
+		{errors.email?.type === "validate" && <p className="text-danger">*This is not valid Email.</p>}
 		</div>
 		<div className="mb-3">
 		<input type="date" className="form-control" placeholder="DD-MM-YYYY" {...register("edob",{required:true})}></input>
-		{errors.edob?.type == "required" && <p className="text-danger">*DOB is Required.</p>}
+		{errors.edob?.type === "required" && <p className="text-danger">*DOB is Required.</p>}
 		</div>
 		<div className="mb-3">
 		<input type="text" className="form-control" placeholder="ImgUrl" {...register("eimgurl",{required:true})}></input>
-		{errors.eimgurl?.type == "required" && <p className="text-danger">*Image url is Mandatory.</p>}
+		{errors.eimgurl?.type === "required" && <p className="text-danger">*Image url is Mandatory.</p>}
 		</div>
 		<button type="submit" className="btn btn-success  float-end">Submit</button>
 		</form>
