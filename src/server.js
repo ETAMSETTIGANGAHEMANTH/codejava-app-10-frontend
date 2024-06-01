@@ -9,7 +9,9 @@ app.use(cors({
 app.get("/", (req,res)=>{
 res.send("server working");
 });
-
+app.get('/cors', (req, res) => {
+    res.send('This has CORS enabled 🎈')
+})
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
