@@ -5,8 +5,6 @@ const app = express();
 
 app.use(cors({
   origin: 'codejava-app-10-frontend-1ef5c823fa33.herokuapp.com',
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true
 }));
 app.get("/", (req,res)=>{
 res.send("server working");
