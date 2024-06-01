@@ -20,7 +20,7 @@ function Login() {
   if (responce === "Login successful") {
   //here i want to pass emial to the home  to fetch data from the database
   const  email = eandp.email;
-  localStorage.setItem('userEmail',email);
+  localStorage.setItem('userEmail',details.email);
   navigate("/home");
   }
 }, [responce]);
