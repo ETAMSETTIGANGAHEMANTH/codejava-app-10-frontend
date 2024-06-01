@@ -4,7 +4,7 @@ const cors = require("cors");
 const app = express();
 
 app.use(cors({
-  origin: 'https://codejava-app-10-frontend-1ef5c823fa33.herokuapp.com',
+  origin: 'https://codejava-app-10-c2fa34a8f93d.herokuapp.com',
 }));
 app.get("/", (req,res)=>{
 res.send("server working");
