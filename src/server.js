@@ -4,7 +4,7 @@ const cors = require("cors");
 const app = express();
 
 app.use(cors({
-  origin: 'https://your-frontend-domain.com',
+  origin: 'codejava-app-10-frontend-1ef5c823fa33.herokuapp.com',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
